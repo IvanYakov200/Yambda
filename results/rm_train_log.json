@@ -1,0 +1,1 @@
+[{"step": 500, "loss": 0.6815, "sec": 496.7, "ratio_mae": 0.2727, "skip_auc": 0.8117, "like_auc": 0.678, "cont_auc": 0.5682}, {"step": 1000, "loss": 0.6833, "sec": 1008.0, "ratio_mae": 0.2839, "skip_auc": 0.8136, "like_auc": 0.696, "cont_auc": 0.5785}, {"step": 1500, "loss": 0.6676, "sec": 1533.2, "ratio_mae": 0.2773, "skip_auc": 0.8132, "like_auc": 0.7014, "cont_auc": 0.578}]

@@ -1,0 +1,28 @@
+holdout examples 139236 145466
+{'step': 500, 'loss': 0.6815, 'sec': 496.7, 'ratio_mae': 0.2727, 'skip_auc': 0.8117, 'like_auc': 0.678, 'cont_auc': 0.5682}
+{'step': 1000, 'loss': 0.6833, 'sec': 1008.0, 'ratio_mae': 0.2839, 'skip_auc': 0.8136, 'like_auc': 0.696, 'cont_auc': 0.5785}
+{'step': 1500, 'loss': 0.6676, 'sec': 1533.2, 'ratio_mae': 0.2773, 'skip_auc': 0.8132, 'like_auc': 0.7014, 'cont_auc': 0.578}
+/home/claude/yambda/src/reward.py:172: RuntimeWarning: Mean of empty slice
+  cand_prev_ratio = np.nanmean(np.where(eq, ctx_ratio, np.nan), 1)
+/usr/local/lib/python3.13/dist-packages/lightgbm/basic.py:668: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning(
+[LightGBM] [Fatal] [cross_entropy]: does not tolerate element [#20 = 1.01] outside [0, 1]
+Traceback (most recent call last):
+  File "/home/claude/yambda/scripts/02_reward.py", line 108, in <module>
+    gbm[name] = lgb.train(params, lgb.Dataset(X, Y[:, k], feature_name=GBM_COLS), 400)
+                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/lightgbm/engine.py", line 296, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "/usr/local/lib/python3.13/dist-packages/lightgbm/basic.py", line 3762, in __init__
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_BoosterCreate(
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        )
+        ^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/lightgbm/basic.py", line 297, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: [cross_entropy]: does not tolerate element [#20 = 1.01] outside [0, 1]

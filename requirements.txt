@@ -1,0 +1,9 @@
+torch>=2.4
+transformers>=4.45
+polars>=1.30
+numpy
+scipy
+scikit-learn
+lightgbm>=4
+matplotlib
+pytest

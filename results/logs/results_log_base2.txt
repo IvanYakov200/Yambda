@@ -1,0 +1,15 @@
+val users 7695 test users 8196
+{'step': 250, 'loss': 7.3653, 'sec': 297.6, 'val_ndcg@10_sub': 0.0906}
+{'step': 500, 'loss': 7.3209, 'sec': 515.3, 'val_ndcg@10_sub': 0.0913}
+{'step': 750, 'loss': 7.2566, 'sec': 731.6, 'val_ndcg@10_sub': 0.0955}
+{'step': 1000, 'loss': 7.2305, 'sec': 946.6, 'val_ndcg@10_sub': 0.0968}
+{'step': 1250, 'loss': 7.1765, 'sec': 1167.6, 'val_ndcg@10_sub': 0.1}
+{'step': 1500, 'loss': 7.1313, 'sec': 1390.7, 'val_ndcg@10_sub': 0.1035}
+{'step': 1750, 'loss': 7.1165, 'sec': 1628.8, 'val_ndcg@10_sub': 0.1057}
+{'step': 2000, 'loss': 7.1205, 'sec': 1871.3, 'val_ndcg@10_sub': 0.1057}
+val popular {'recall@10': 0.0275, 'ndcg@10': 0.0302, 'map@10': 0.0139, 'hit@10': 0.1686, 'recall@50': 0.0492, 'ndcg@10_new_items': 0.0087, 'repeat_rate': 0.4281, 'coverage': 0.0005, 'top1_item_share_users': 1.0, 'top10_items_exposure': 1.0, 'gini_exposure': 0.9995, 'mean_log_pop': 9.8652, 'mean_length_sec': 164.5, 'share_top100_popular': 1.0}
+val history_top {'recall@10': 0.1699, 'ndcg@10': 0.1864, 'map@10': 0.128, 'hit@10': 0.4599, 'recall@50': 0.238, 'ndcg@10_new_items': 0.0002, 'repeat_rate': 0.9954, 'coverage': 0.8422, 'top1_item_share_users': 0.0576, 'top10_items_exposure': 0.0276, 'gini_exposure': 0.5972, 'mean_log_pop': 6.9226, 'mean_length_sec': 199.7789, 'share_top100_popular': 0.0865}
+val gpt2_base {'recall@10': 0.0979, 'ndcg@10': 0.1054, 'map@10': 0.0551, 'hit@10': 0.4568, 'recall@50': 0.1657, 'ndcg@10_new_items': 0.0133, 'repeat_rate': 0.6775, 'coverage': 0.5599, 'top1_item_share_users': 0.0877, 'top10_items_exposure': 0.039, 'gini_exposure': 0.7875, 'mean_log_pop': 7.266, 'mean_length_sec': 195.417, 'share_top100_popular': 0.1166}
+test popular {'recall@10': 0.0251, 'ndcg@10': 0.0271, 'map@10': 0.0126, 'hit@10': 0.1521, 'recall@50': 0.0464, 'ndcg@10_new_items': 0.008, 'repeat_rate': 0.4334, 'coverage': 0.0005, 'top1_item_share_users': 1.0, 'top10_items_exposure': 1.0, 'gini_exposure': 0.9995, 'mean_log_pop': 9.8652, 'mean_length_sec': 164.5, 'share_top100_popular': 1.0}
+test history_top {'recall@10': 0.166, 'ndcg@10': 0.1804, 'map@10': 0.1236, 'hit@10': 0.4507, 'recall@50': 0.2324, 'ndcg@10_new_items': 0.0004, 'repeat_rate': 0.9938, 'coverage': 0.8497, 'top1_item_share_users': 0.0567, 'top10_items_exposure': 0.0286, 'gini_exposure': 0.5949, 'mean_log_pop': 6.9194, 'mean_length_sec': 199.4197, 'share_top100_popular': 0.0852}
+test gpt2_base {'recall@10': 0.0911, 'ndcg@10': 0.098, 'map@10': 0.0515, 'hit@10': 0.4231, 'recall@50': 0.1578, 'ndcg@10_new_items': 0.0135, 'repeat_rate': 0.6732, 'coverage': 0.572, 'top1_item_share_users': 0.0915, 'top10_items_exposure': 0.0395, 'gini_exposure': 0.7876, 'mean_log_pop': 7.2767, 'mean_length_sec': 195.3994, 'share_top100_popular': 0.1181}
